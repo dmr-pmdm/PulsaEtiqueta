@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 txtSaludo.setBackgroundColor(getResources().getColor(R.color.fondo));
                 txtSaludo.setTextColor(getResources().getColor(R.color.texto));
-                txtSaludo.setRotation(15);
+                txtSaludo.setRotation(txtSaludo.getRotation() + 15);
             }
         });
     }
