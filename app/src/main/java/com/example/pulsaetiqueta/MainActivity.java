@@ -23,6 +23,9 @@ public class MainActivity extends AppCompatActivity {
                 txtSaludo.setBackgroundColor(getResources().getColor(R.color.fondo));
                 txtSaludo.setTextColor(getResources().getColor(R.color.texto));
                 txtSaludo.setRotation(txtSaludo.getRotation() + 15);
+                if (txtSaludo.getRotation() >= 360) {
+                    txtSaludo.setRotation(0);
+                }
             }
         });
     }
